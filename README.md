@@ -1,59 +1,147 @@
+<div align="center">
+  <img src="images/icon.png" alt="DbWox logo" width="84" height="84">
+
 # DbWox
 
-**DbWox** adalah database client desktop gratis untuk membantu koneksi, eksplorasi, query, dan analisis berbagai database dari satu aplikasi. Proyek ini bersifat *freeware* dan didistribusikan dalam bentuk binary; source code tidak disertakan pada repository ini.
+**A modern desktop database client, SQL workspace, AI assistant, GIS viewer, and API code-generation platform.**
 
-## Versi saat ini
+[![Release](https://img.shields.io/badge/release-v1.0.1-2ea44f?style=flat-square)](../../releases/latest)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-0078D4?style=flat-square)](#system-requirements)
+[![Java](https://img.shields.io/badge/runtime-Java%2017%2B-E76F00?style=flat-square&logo=openjdk)](https://adoptium.net/)
+[![Database](https://img.shields.io/badge/database-JDBC%20%2B%20DuckDB-336791?style=flat-square)](#database-support)
 
-**DbWox 1.0.0**
+[English](README.md) · [Bahasa Indonesia](README-id.md)
 
-Silakan buka halaman [Releases](../../releases/latest) untuk mengunduh versi terbaru.
+DbWox helps developers and database teams explore connections, write and run SQL, inspect database objects, work with geospatial data, use AI-assisted SQL, and generate production-ready API projects from database metadata.
 
-## Fitur utama
+</div>
 
-- Koneksi ke PostgreSQL, MySQL, Microsoft SQL Server, DB2, ClickHouse, Oracle, Microsoft Access, H2, dan DBF.
-- Database Explorer: database, schema, table, view, function, procedure, key, grant, dan properti koneksi.
-- SQL Query Editor dengan syntax highlighting, formatter SQL, autocomplete table/kolom, find/replace, undo/redo, dan hasil query streaming.
-- Browse Data, Describe Table/View, DDL, grants, relasi foreign key, dan ER Diagram.
-- Copy table antar koneksi serta dump database ke SQL.
-- Dukungan GeoParquet dari file lokal, HTTP(S), dan Amazon S3.
-- Workspace: simpan, impor, ekspor, backup, restore, serta reset workspace/settings.
-- AI Assistant opsional dengan mode BYOK (*Bring Your Own Key*) untuk OpenAI atau Google Gemini.
-- Penguncian aplikasi opsional untuk melindungi akses lokal.
-- Tema terang/gelap serta antarmuka desktop yang dioptimalkan untuk pekerjaan database sehari-hari.
+## Application Preview
 
-## Unduhan dan instalasi
+DbWox provides a comfortable dark and light desktop interface for database work.
 
-| Platform | File | Catatan |
-| --- | --- | --- |
-| Windows | `DBWox-<versi>.msi` | Jalankan installer, lalu buka **DBWox** dari Start Menu. |
-| macOS | `DBWox-<versi>-macos-distribution.zip` | Extract di Mac, kemudian jalankan `build-macos.sh` menggunakan JDK 26 untuk membuat DMG sesuai arsitektur Mac. |
-| Linux | `DBWox-<versi>-linux-distribution.zip` | Extract di Linux, lalu jalankan `build-linux.sh` menggunakan JDK 26 untuk membuat `.deb`, `.rpm`, atau app-image. |
+<table>
+  <tr>
+    <td align="center"><strong>Light Mode</strong></td>
+    <td align="center"><strong>Dark Mode</strong></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="images/dbwox-main-light.png" alt="DbWox light mode" width="100%"></td>
+    <td width="50%"><img src="images/dbwox-main-dark.png" alt="DbWox dark mode" width="100%"></td>
+  </tr>
+</table>
 
-> Build native macOS dan Linux perlu dilakukan pada sistem operasi tujuan agar runtime dan arsitektur CPU sesuai.
+## Current Version
 
-## Kebutuhan sistem
+**DbWox 1.0.1**
 
-- Windows: installer sudah menyertakan runtime Java yang diperlukan.
-- macOS/Linux: JDK 26 diperlukan untuk menjalankan script pembuat installer pada platform tersebut.
-- Koneksi jaringan sesuai kebutuhan database atau sumber data yang digunakan.
+Download the latest Windows installer from the [Releases](../../releases/latest) page.
 
-## AI Assistant dan privasi
+## Highlights
 
-AI Assistant bersifat opsional. DbWox menggunakan model BYOK: API key berasal dari pengguna dan request hanya dikirim setelah pengguna mengaktifkan serta menyetujui pengiriman konteks yang relevan.
+- SQL Query Editor with syntax highlighting, auto-completion, query history, recent files, and multi-result navigation.
+- JDBC database connections with lazy loading, Open/Closed connection state, Connect/Disconnect actions, and SSH tunneling.
+- AI Assistant with Gemini/OpenAI profiles, permission-aware database tools, SQL highlighting, and Copy/Insert/Run actions.
+- GIS Viewer and My Geoparquets explorer.
+- Embedded JWT API Services with Auth endpoints, Sub-APIs, CRUD resources, Search endpoints, Custom SQL endpoints, and Header-Detail transactions.
+- Swagger/OpenAPI link support and Postman collection export.
+- Code generation for Spring Boot, Quarkus, Express, Go, Laravel, Python, ASP.NET Core, and Rust.
 
-Jangan pernah membagikan API key, password database, atau data sensitif pada issue maupun diskusi publik.
+## Database Support
 
-## Dukungan dan masukan
+DbWox uses JDBC-based connectivity and supports database engines available through configured JDBC drivers, including:
 
-Silakan gunakan halaman **Issues** untuk melaporkan bug atau mengajukan fitur. Sertakan:
+- PostgreSQL
+- Microsoft SQL Server
+- MySQL-compatible databases
+- DuckDB
+- Other JDBC-compatible database systems
 
-1. Versi DbWox dan sistem operasi.
-2. Jenis database serta versinya.
-3. Langkah untuk menghasilkan masalah.
-4. Pesan error atau screenshot, setelah menghapus informasi sensitif.
+## API Code Generator
 
-DbWox gratis digunakan. Jika aplikasi ini membantu pekerjaan Anda dan Anda ingin mendukung pengembangannya, informasi donasi akan ditambahkan pada halaman ini.
+Generated projects include authentication, database access, CRUD routes, custom endpoints, and optional Swagger/OpenAPI documentation.
 
-## Lisensi dan distribusi
+| Platform | Frameworks / Options |
+|---|---|
+| Java | Spring Boot with JPA or JdbcTemplate; Quarkus with Panache; Maven or Gradle |
+| JavaScript / TypeScript | Express, ESM, npm/pnpm/yarn/bun, Prisma or Drizzle |
+| Go | Gin, Fiber, Echo |
+| PHP | Laravel, Sanctum, tymon JWT |
+| Python | Flask, FastAPI, SQLAlchemy, SQLModel |
+| C# | ASP.NET Core, Entity Framework Core, Dapper |
+| Rust | Axum, Actix-Web, SQLx PostgreSQL |
 
-Repository ini hanya berfungsi sebagai tempat distribusi binary resmi DbWox. Hak cipta dan ketentuan penggunaan akan diumumkan pada rilis berikutnya.
+## AI Assistant
+
+The AI Assistant is designed as a database companion for the active Query Editor session. It can generate PostgreSQL SQL, explain or optimize selected queries, inspect approved metadata, and execute approved read-only operations. Credentials and database secrets are not sent to the configured AI provider.
+
+## Installation
+
+### Windows
+
+1. Open the [latest release](../../releases/latest).
+2. Download `DBWox-<version>.exe`.
+3. Run the installer and follow the setup wizard.
+4. If Windows displays a warning for the self-signed certificate, install the included `.cer` certificate only when the installer was downloaded from a trusted release source.
+
+### Linux and macOS
+
+DbWox is Java-based and can be run from source or a packaged JAR on Linux and macOS. Use a Java 17+ runtime and make sure the required JDBC drivers are available. Platform-specific installers may be provided separately in future releases.
+
+## System Requirements
+
+- Windows 10 or Windows 11, 64-bit, for the official Windows installer.
+- Linux distribution with a supported Java 17+ runtime.
+- macOS with a supported Java 17+ runtime.
+- Java 17 or newer.
+- A JDBC driver for each database engine you want to connect to.
+- Network access to remote databases and SSH servers when applicable.
+
+## Building from Source
+
+The desktop application is built with Maven:
+
+```powershell
+cd Source\java
+mvn clean package
+```
+
+The generated projects use their own build tools. For example:
+
+```powershell
+# Java
+mvn clean package
+
+# Rust
+cargo fmt
+cargo check
+cargo test
+cargo build
+```
+
+## Security Notes
+
+- API endpoints can require JWT Bearer authentication.
+- Database metadata and query results require explicit approval before being sent to an AI provider.
+- SQL is not executed automatically by the AI Assistant.
+- Never publish API keys, database passwords, SSH credentials, or production connection files in a repository or issue.
+
+## Release Notes
+
+See [readme-1.0.1.md](readme-1.0.1.md) for the detailed v1.0.1 changelog.
+
+## Contributing
+
+Bug reports, feature suggestions, and pull requests are welcome. Please include the DbWox version, operating system, database engine, and a reproducible description when reporting an issue.
+
+## License
+
+See the [LICENSE](LICENSE) file for licensing terms.
+
+## Support
+
+For questions and bug reports, use the repository's [Issues](../../issues) page.
+
+## Donations and Research Support
+
+If DbWox helps your work, research, or learning, consider supporting continued development through the contribution options listed on the project repository.
