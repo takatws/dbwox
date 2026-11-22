@@ -5,12 +5,12 @@
 
 **Aplikasi desktop database modern, SQL workspace, AI Assistant, GIS Viewer, dan platform pembuat kode API.**
 
-[![Rilis](https://img.shields.io/badge/rilis-v1.0.1-2ea44f?style=flat-square)](../../releases/latest)
+[![Rilis](https://img.shields.io/badge/mendatang-v1.0.2-2ea44f?style=flat-square)](../../releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-0078D4?style=flat-square)](#persyaratan-sistem)
-[![Java](https://img.shields.io/badge/runtime-Java%2017%2B-E76F00?style=flat-square&logo=openjdk)](https://adoptium.net/)
+[![Java](https://img.shields.io/badge/runtime-Java%2026%2B-E76F00?style=flat-square&logo=openjdk)](https://adoptium.net/)
 [![Database](https://img.shields.io/badge/database-JDBC%20%2B%20DuckDB-336791?style=flat-square)](#dukungan-database)
 
-[English](README.md) · [Bahasa Indonesia](README.id.md)
+[English](README.md) · [Bahasa Indonesia](README-id.md)
 
 DbWox membantu developer dan tim database untuk mengeksplorasi koneksi, menulis dan menjalankan SQL, memeriksa objek database, mengolah data geospasial, menggunakan SQL berbantuan AI, serta membuat project API dari metadata database.
 
@@ -31,11 +31,21 @@ DbWox menyediakan antarmuka desktop yang nyaman digunakan dalam mode gelap maupu
   </tr>
 </table>
 
-## Versi Saat Ini
+## DBWox 1.0.2
 
-**DbWox 1.0.1**
+**DBWox 1.0.2 — Yang Baru**
 
-Unduh installer Windows terbaru melalui halaman [Releases](../../releases/latest).
+- **Query Editor:** SQL Outline, expand/collapse query, autocomplete lebih lengkap, serta dukungan file SQL besar.
+- **SQL Problems:** validasi tabel/kolom, deteksi kolom ambigu, dan quick fix melalui intentionBulb atau **Alt+Enter**.
+- **Database Explorer:** mode verbose dengan detail kolom, keys, dan indexes; refresh background serta penyimpanan posisi treeview.
+- **Pencarian:** Find Usages, Search Database Objects, panel Property, dan navigasi langsung ke objek.
+- **Export/Import:** Function Mapping berbasis CSV, perluasan terjemahan view dan CTE, serta pemilihan dependensi view.
+- **SQL Dump:** cakupan objek lebih lengkap, pengurutan dependensi, dan format routine yang lebih rapi.
+- **Optimizer & Tampilan:** skor dan rekomendasi Before/After, penyempurnaan tema Light/Dark, preview SQL berwarna, dan splash screen baru.
+
+*Dukungan lintas database mengikuti kemampuan engine dan izin akses metadata.*
+
+**Ketersediaan download:** Installer 1.0.2 belum dipublikasikan. [Halaman Releases](../../releases) saat ini menyediakan versi 1.0.1; periksa versi rilis sebelum mengunduh.
 
 ## Fitur Utama
 
@@ -86,14 +96,14 @@ AI Assistant dirancang sebagai teman database untuk sesi Query Editor aktif. AI 
 
 ### Linux dan macOS
 
-DbWox berbasis Java dan dapat dijalankan dari source atau JAR hasil build pada Linux dan macOS. Gunakan Java 17+ dan pastikan JDBC driver yang dibutuhkan tersedia. Installer khusus platform dapat disediakan pada rilis mendatang.
+DbWox berbasis Java dan dapat dijalankan dari source atau JAR hasil build pada Linux dan macOS. Gunakan Java 26+ dan pastikan JDBC driver yang dibutuhkan tersedia. Installer khusus platform dapat disediakan pada rilis mendatang.
 
 ## Persyaratan Sistem
 
 - Windows 10 atau Windows 11 64-bit untuk installer resmi Windows.
-- Distribusi Linux dengan Java 17+.
-- macOS dengan Java 17+.
-- Java 17 atau versi lebih baru.
+- Distribusi Linux dengan Java 26+.
+- macOS dengan Java 26+.
+- Java 26 atau versi lebih baru untuk JAR 1.0.2; installer Windows menyertakan runtime.
 - JDBC driver untuk setiap database yang ingin digunakan.
 - Akses jaringan ke database dan server SSH jika diperlukan.
 
@@ -130,7 +140,7 @@ mvn clean package
 
 ## Catatan Rilis
 
-Lihat [readme-1.0.1.md](readme-1.0.1.md) untuk changelog lengkap DbWox v1.0.1.
+Lihat [RELEASE-NOTES-1.0.2.md](RELEASE-NOTES-1.0.2.md) untuk catatan rilis 1.0.2 dalam dua bahasa. Untuk rilis sebelumnya, lihat [readme-1.0.1.md](readme-1.0.1.md).
 
 ## Kontribusi
 

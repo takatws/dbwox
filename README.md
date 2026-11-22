@@ -5,9 +5,9 @@
 
 **A modern desktop database client, SQL workspace, AI assistant, GIS viewer, and API code-generation platform.**
 
-[![Release](https://img.shields.io/badge/release-v1.0.1-2ea44f?style=flat-square)](../../releases/latest)
+[![Release](https://img.shields.io/badge/upcoming-v1.0.2-2ea44f?style=flat-square)](../../releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-0078D4?style=flat-square)](#system-requirements)
-[![Java](https://img.shields.io/badge/runtime-Java%2017%2B-E76F00?style=flat-square&logo=openjdk)](https://adoptium.net/)
+[![Java](https://img.shields.io/badge/runtime-Java%2026%2B-E76F00?style=flat-square&logo=openjdk)](https://adoptium.net/)
 [![Database](https://img.shields.io/badge/database-JDBC%20%2B%20DuckDB-336791?style=flat-square)](#database-support)
 
 [English](README.md) · [Bahasa Indonesia](README-id.md)
@@ -31,11 +31,21 @@ DbWox provides a comfortable dark and light desktop interface for database work.
   </tr>
 </table>
 
-## Current Version
+## DBWox 1.0.2
 
-**DbWox 1.0.1**
+**DBWox 1.0.2 — What's New**
 
-Download the latest Windows installer from the [Releases](../../releases/latest) page.
+- **Query Editor:** SQL Outline, query folding, expanded autocomplete, and large SQL file support.
+- **SQL Problems:** table/column validation, ambiguous column detection, and quick fixes through intentionBulb or **Alt+Enter**.
+- **Database Explorer:** verbose mode with columns, keys, and indexes; background refresh and saved tree state.
+- **Search:** Find Usages, Search Database Objects, a Property panel, and direct object navigation.
+- **Export/Import:** CSV-based Function Mapping, extended view and CTE translation, and view dependency selection.
+- **SQL Dump:** broader object coverage, dependency ordering, and cleaner routine formatting.
+- **Optimizer & Appearance:** Before/After scores and recommendations, improved Light/Dark themes, syntax-colored SQL previews, and an updated splash screen.
+
+*Cross-database support depends on engine capabilities and metadata access permissions.*
+
+**Download availability:** The 1.0.2 installer has not been published yet. The [Releases page](../../releases) currently provides version 1.0.1; check the release version before downloading.
 
 ## Highlights
 
@@ -86,14 +96,14 @@ The AI Assistant is designed as a database companion for the active Query Editor
 
 ### Linux and macOS
 
-DbWox is Java-based and can be run from source or a packaged JAR on Linux and macOS. Use a Java 17+ runtime and make sure the required JDBC drivers are available. Platform-specific installers may be provided separately in future releases.
+DbWox is Java-based and can be run from source or a packaged JAR on Linux and macOS. Use a Java 26+ runtime and make sure the required JDBC drivers are available. Platform-specific installers may be provided separately in future releases.
 
 ## System Requirements
 
 - Windows 10 or Windows 11, 64-bit, for the official Windows installer.
-- Linux distribution with a supported Java 17+ runtime.
-- macOS with a supported Java 17+ runtime.
-- Java 17 or newer.
+- Linux distribution with a supported Java 26+ runtime.
+- macOS with a supported Java 26+ runtime.
+- Java 26 or newer for the 1.0.2 JAR; the Windows installer bundles its runtime.
 - A JDBC driver for each database engine you want to connect to.
 - Network access to remote databases and SSH servers when applicable.
 
@@ -128,7 +138,7 @@ cargo build
 
 ## Release Notes
 
-See [readme-1.0.1.md](readme-1.0.1.md) for the detailed v1.0.1 changelog.
+See [RELEASE-NOTES-1.0.2.md](RELEASE-NOTES-1.0.2.md) for the bilingual 1.0.2 release notes. For the previous release, see [readme-1.0.1.md](readme-1.0.1.md).
 
 ## Contributing
 
