@@ -94,9 +94,28 @@ The AI Assistant is designed as a database companion for the active Query Editor
 3. Run the installer and follow the setup wizard.
 4. If Windows displays a warning for the self-signed certificate, install the included `.cer` certificate only when the installer was downloaded from a trusted release source.
 
-### Linux and macOS
+### macOS
 
-DbWox is Java-based and can be run from source or a packaged JAR on Linux and macOS. Use a Java 26+ runtime and make sure the required JDBC drivers are available. Platform-specific installers may be provided separately in future releases.
+**[Download DBWox 1.0.2 for macOS (ZIP)](https://github.com/takatws/dbwox/releases/download/v1.0.2/DBWox-1.0.2-macos-distribution.zip)**
+
+1. Install **Java JDK 26 or newer** for your Mac: **ARM64/aarch64** for Apple Silicon, or **x64/x86_64** for Intel. Java is not bundled in this ZIP.
+2. Extract the entire ZIP and keep the JAR, `lib` folder, and scripts together.
+3. Double-click **DBWox.command** in Finder, or run these commands in Terminal:
+
+```bash
+cd "/path/to/DBWox-macos"
+bash dbwox.sh
+```
+
+To check Java without starting DBWox, run `bash dbwox.sh --check`. If executable permissions were lost during extraction, run `chmod +x DBWox.command dbwox.sh build-macos.sh`.
+
+This portable package is **unsigned and not notarized**, and has **not yet been tested directly on macOS**. If macOS blocks the launcher, approve this trusted download through Privacy & Security; do not disable Gatekeeper globally. Settings and workspaces are stored in `~/Library/Application Support/DBWox`.
+
+Optional: run `bash build-macos.sh` **on a Mac with a full JDK** to create an unsigned DMG with a bundled Java runtime in `../DBWox-macos-installer`. The DMG architecture follows the JDK used to build it (Apple Silicon or Intel).
+
+### Linux
+
+DbWox can be run from source or a packaged JAR with Java 26+ and the required JDBC drivers. A Linux 1.0.2 download is not included in this release yet.
 
 ## System Requirements
 
