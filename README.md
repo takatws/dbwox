@@ -115,7 +115,22 @@ Optional: run `bash build-macos.sh` **on a Mac with a full JDK** to create an un
 
 ### Linux
 
-DbWox can be run from source or a packaged JAR with Java 26+ and the required JDBC drivers. A Linux 1.0.2 download is not included in this release yet.
+**[Download DBWox 1.0.2 for Linux (ZIP)](https://github.com/takatws/dbwox/releases/download/v1.0.2/DBWox-1.0.2-linux-distribution.zip)**
+
+1. Install **Java 26 or newer (desktop JDK, not headless-only)** matching your processor: **x86_64** or **ARM64/aarch64**. Java is not bundled in this ZIP.
+2. Extract the entire ZIP, keeping the JAR, `lib` folder, and launcher together.
+3. Open a Terminal in the extracted folder and run:
+
+```bash
+cd "/path/to/DBWox-linux"
+bash dbwox.sh
+```
+
+To launch it as an executable, run `chmod +x dbwox.sh`, then `./dbwox.sh`. To check Java without starting DBWox, run `bash dbwox.sh --check`. The launcher checks `JAVA_HOME` first, then `java` on `PATH`.
+
+Use a **64-bit, glibc-based Linux desktop** with the graphical libraries required by your JDK (X11/XWayland, fontconfig, and fonts). Alpine/musl is not covered. Run from your desktop session, not as root. Settings and workspaces are stored in `$XDG_DATA_HOME/dbwox`, or `~/.local/share/dbwox` when that variable is unset.
+
+This is a portable ZIP, **not a DEB/RPM installer**. Packaging and launcher syntax have been checked, but **direct execution on a Linux desktop has not yet been tested**. See the included `README-Linux.txt` for details.
 
 ## System Requirements
 
