@@ -5,7 +5,7 @@
 
 **A modern desktop database client, SQL workspace, AI assistant, GIS viewer, and API code-generation platform.**
 
-[![Release](https://img.shields.io/badge/upcoming-v1.0.2-2ea44f?style=flat-square)](../../releases/latest)
+[![Release](https://img.shields.io/badge/release-v1.0.2-2ea44f?style=flat-square)](https://github.com/takatws/dbwox/releases/tag/v1.0.2)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-0078D4?style=flat-square)](#system-requirements)
 [![Java](https://img.shields.io/badge/runtime-Java%2026%2B-E76F00?style=flat-square&logo=openjdk)](https://adoptium.net/)
 [![Database](https://img.shields.io/badge/database-JDBC%20%2B%20DuckDB-336791?style=flat-square)](#database-support)
@@ -45,7 +45,7 @@ DbWox provides a comfortable dark and light desktop interface for database work.
 
 *Cross-database support depends on engine capabilities and metadata access permissions.*
 
-**Download availability:** The 1.0.2 installer has not been published yet. The [Releases page](../../releases) currently provides version 1.0.1; check the release version before downloading.
+**[Download DBWox 1.0.2 for Windows](https://github.com/takatws/dbwox/releases/download/v1.0.2/DBWox-1.0.2.exe)** · [Release details](https://github.com/takatws/dbwox/releases/tag/v1.0.2)
 
 ## Highlights
 
@@ -89,8 +89,8 @@ The AI Assistant is designed as a database companion for the active Query Editor
 
 ### Windows
 
-1. Open the [latest release](../../releases/latest).
-2. Download `DBWox-<version>.exe`.
+1. Open the [latest release](https://github.com/takatws/dbwox/releases/tag/v1.0.2).
+2. Download `DBWox-1.0.2.exe`.
 3. Run the installer and follow the setup wizard.
 4. If Windows displays a warning for the self-signed certificate, install the included `.cer` certificate only when the installer was downloaded from a trusted release source.
 

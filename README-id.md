@@ -5,7 +5,7 @@
 
 **Aplikasi desktop database modern, SQL workspace, AI Assistant, GIS Viewer, dan platform pembuat kode API.**
 
-[![Rilis](https://img.shields.io/badge/mendatang-v1.0.2-2ea44f?style=flat-square)](../../releases/latest)
+[![Rilis](https://img.shields.io/badge/rilis-v1.0.2-2ea44f?style=flat-square)](https://github.com/takatws/dbwox/releases/tag/v1.0.2)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-0078D4?style=flat-square)](#persyaratan-sistem)
 [![Java](https://img.shields.io/badge/runtime-Java%2026%2B-E76F00?style=flat-square&logo=openjdk)](https://adoptium.net/)
 [![Database](https://img.shields.io/badge/database-JDBC%20%2B%20DuckDB-336791?style=flat-square)](#dukungan-database)
@@ -45,7 +45,7 @@ DbWox menyediakan antarmuka desktop yang nyaman digunakan dalam mode gelap maupu
 
 *Dukungan lintas database mengikuti kemampuan engine dan izin akses metadata.*
 
-**Ketersediaan download:** Installer 1.0.2 belum dipublikasikan. [Halaman Releases](../../releases) saat ini menyediakan versi 1.0.1; periksa versi rilis sebelum mengunduh.
+**[Unduh DBWox 1.0.2 untuk Windows](https://github.com/takatws/dbwox/releases/download/v1.0.2/DBWox-1.0.2.exe)** · [Detail rilis](https://github.com/takatws/dbwox/releases/tag/v1.0.2)
 
 ## Fitur Utama
 
@@ -89,8 +89,8 @@ AI Assistant dirancang sebagai teman database untuk sesi Query Editor aktif. AI 
 
 ### Windows
 
-1. Buka [rilis terbaru](../../releases/latest).
-2. Unduh file `DBWox-<version>.exe`.
+1. Buka [rilis terbaru](https://github.com/takatws/dbwox/releases/tag/v1.0.2).
+2. Unduh file `DBWox-1.0.2.exe`.
 3. Jalankan installer dan ikuti wizard instalasi.
 4. Jika Windows menampilkan peringatan sertifikat self-signed, instal file `.cer` hanya jika installer berasal dari sumber release yang tepercaya.
 
